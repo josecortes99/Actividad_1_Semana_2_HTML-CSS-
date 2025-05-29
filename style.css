@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(./Imagenes/fondos.jpeg);
+    margin: 0;
+    padding-top: 80px;
+}
+
+.menu{
+    max-width: 100%;
+    width: 800px;
+    margin: 10px auto;
+    border: 1px solid gray;
+    box-shadow: 0px 0px 20px gray;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.menu .div{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-bottom: 1px solid #ccc;
+    background-color: aqua;
+    padding: 10px;
+}
+
+.head{
+    display: flex;
+    height: 100px;
+    gap: 200px;
+    align-items: center;
+    justify-content: center;
+}
+
+.head__title{
+    width: 300px;
+    height: 100px;
+    border: 1px solid gray;
+    box-shadow: 0px 0px 20px gray;
+    text-align: center;
+    border-radius: 10px;
+    background-color: aqua;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 100px;
+}
+
+.head__title-i{
+    width: 300px;
+    height: 100px;
+    border: 1px solid gray;
+    box-shadow: 0px 0px 20px gray;
+}
+
+.clearfix{
+    clear: both;
+}
+
+.head__nav{
+    font-size: 20px;
+    font-style: italic;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.head__ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+    margin: 20px;
+    padding: 10px;
+    background-color: white;
+    gap: 20px;
+    border-radius: 10px;
+}
+
+.head__li a{
+    color: black;
+    transition: 0.7s;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.head__li a:hover{
+    color: aqua;
+}
+
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    text-align: center;  
+}
+
+.div__2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    background-color: black;
+    border-radius: 20px;
+}
+
+.div__2-i{
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px black;
+}
+
+.div__2-p{
+    color: white;
+    text-align: center;
+    font-style: italic;
+    padding: 10px;
+}
+
+.div__2-pp{
+    color: aqua;
+    font-size: 30px;
+    text-align: center;
+    font-style: italic;
+    padding: 10px;
+}
+
+.div__1-h{
+    text-align: center;
+    padding: 10px;
+
+}
+
+.div__1-i{
+    height: 300px;
+    width: 100%;
+    padding: 10px;
+}
+
+.div__1-p{
+    font-size: 30px;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .head {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .head__ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu {
+        width: 95%;
+        margin: 10px auto;
+    }
+
+    .box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .div__2 {
+        width: 90%;
+    }
+
+    .div__1-i{
+        width: 90%;
+
+    }
+
+    .head__ul {
+        flex-wrap: nowrap; /* Evita que los elementos se apilen */
+        overflow-x: auto; /* Permite desplazamiento horizontal si es necesario */
+        justify-content: space-around; /* Distribuye los ítems en una línea */
+        padding: 5px;
+    }
+
+    .head__li a {
+        font-size: 14px; /* Reduce el tamaño en pantallas pequeñas */
+        padding: 5px;
+    }
+
+
+
+}
